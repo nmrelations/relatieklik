@@ -6,24 +6,29 @@
 <meta name="description" content="Relatieklik.nl is samengevoegd met Knuz.nl. Log in of meld je aan via Knuz.nl." />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 <style>
   /* notice card that replaces the old search widget */
-  .notice-card{background:#fff; max-width:420px; margin-left:auto; margin-right:100px; margin-top:40px;
-    box-shadow:7px 8px 4px #666666; font-family:'Quicksand Regular';}
+  .notice-card{background:#fff; max-width:420px; margin-left:0; margin-right:auto; margin-top:40px;
+    box-shadow:7px 8px 4px #666666; font-family:'Quicksand Regular'; box-sizing:border-box;}
   .notice-head{background:#9F3750; font-size:19px; color:#fff; line-height:36px; text-align:center; font-family:'Quicksand Bold';}
   .notice-body{padding:18px; color:#333; font-size:15px; line-height:22px;}
   .notice-cta{display:block; text-align:center; background:#E64566; color:#fff; font-family:'Quicksand Bold';
     font-size:22px; line-height:50px; text-decoration:none; margin-top:14px; box-shadow:7px 8px 4px #666666;}
   .notice-cta:hover{background:#d13655;}
-  @media (max-width: 1024px){ .notice-card{margin:40px auto; float:none;} }
+  /* same breakpoint the original stylesheet uses for .zoke-cont (static/full-width) */
+  @media (max-width: 767px){
+    .notice-card{margin:20px 16px; max-width:none; float:none;}
+    .left{padding:0 16px; box-sizing:border-box;}
+    .login{text-align:center;}
+  }
 </style>
 </head>
 <body dir="ltr">
 
 <div class="header-container">
   <div class="header">
-    <div class="logo floatleft"><a href="https://knuz.nl"><img src="/images/logo.png" height="46" alt="Relatieklik.nl" title="Relatieklik.nl"/></a></div>
+    <div class="logo floatleft"><a href="https://knuz.nl"><img src="images/logo.png" height="46" alt="Relatieklik.nl" title="Relatieklik.nl"/></a></div>
     <div class="middle floatleft">Gratis online dating &amp; <br>relatiebemiddeling</div>
     <div class="login floatleft">
       <a href="https://knuz.nl" class="inloggen">Inloggen</a>
@@ -33,7 +38,7 @@
 
   <div class="slider-container">
     <section class="slider">
-      <img src="/images/hero-woman.jpg" style="width:100%; display:block;" alt="" />
+      <img src="images/hero-woman.jpg" style="width:100%; display:block;" alt="" />
     </section>
 
     <div class="zoke-cont">
@@ -45,7 +50,7 @@
           <a href="https://knuz.nl" class="notice-cta">Ga naar Knuz.nl</a>
         </div>
       </div>
-      <div class="garantee"><img src="/images/gratis-badge.png" alt="100% Gratis" title="100% Gratis"/></div>
+      <div class="garantee"><img src="images/gratis-badge.png" alt="100% Gratis" title="100% Gratis"/></div>
     </div>
   </div>
   <div class="clear"></div>
@@ -87,7 +92,7 @@
             <li><a href="https://www.knuz.nl/benut-alle-beschikbare-velden-in-je-profiel.php">Benut alle beschikbare velden in je profiel!</a></li>
             <li><a href="https://www.knuz.nl/pas-op-voor-dating-scam-en-misleiding-op-datingsites.php">Pas op voor datingscam en misleiding op datingsites!</a></li>
           </ul></td>
-          <td width="20%"><img src="/images/gratis-badge.png" alt="" style="width:60px;"/></td>
+          <td width="20%"><img src="images/gratis-badge.png" alt="" style="width:60px;"/></td>
         </tr>
       </table>
     </div>
