@@ -1,2 +1,7 @@
-# relatieklik.nl retired — 301 everything to knuz.nl (preserves SEO signal)
-Redirect 301 / https://knuz.nl/
+# relatieklik.nl retired: homepage shows a "we moved to knuz.nl" notice page,
+# every other (old, indexed) URL 301s straight to knuz.nl to keep SEO signal.
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/(css|images)/ [OR]
+RewriteCond %{REQUEST_URI} ^/(index\.html)?$
+RewriteRule ^ - [L]
+RewriteRule ^ https://knuz.nl/ [R=301,L]
